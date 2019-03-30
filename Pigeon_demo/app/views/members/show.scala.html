@@ -1,0 +1,12 @@
+@(mem: Member)
+
+
+@layout(mem.name){
+    <h2> @mem.name</h2>
+    <p> @mem.email</p>
+    <p> @mem.position</p>
+
+    <a href="@routes.MemberController.edit(mem.id)"> Edit </a>
+    <a href="@routes.MemberController.delete(mem.id)"> Delete </a>
+}
+

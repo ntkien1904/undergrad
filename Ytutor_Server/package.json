@@ -1,0 +1,15 @@
+{
+  "name": "ytutor_server",
+  "version": "0.0.1",
+  "main": "app.js",
+  "description": "Ytutor server side",
+  "dependencies": {
+    "express": "*",
+    "body-parser":"*",
+  	"mongoose":"*",
+    "socket.io": "*",
+    "socketio-file-upload": "^0.4.4"
+  },
+  "author": "kien",
+  "license": "ISC"
+}

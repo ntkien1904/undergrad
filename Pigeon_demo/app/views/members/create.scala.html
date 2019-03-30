@@ -1,0 +1,17 @@
+@(memForm: Form[Member])
+@import helper._
+
+@layout("Create Members"){
+    <h1> Create Member</h1>
+
+    @helper.form(action = routes.MemberController.save()){
+        @helper.inputText(memForm("id"))
+        @helper.inputText(memForm("name"))
+        @helper.inputText(memForm("email"))
+        @helper.inputText(memForm("position"))
+
+
+        <input type = "submit" value="Create member ">
+    }
+}
+

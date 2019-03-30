@@ -1,0 +1,17 @@
+@(memForm: Form[Member])
+@import helper._
+
+
+@layout("Edit Member"){
+    <h1> Edit Member</h1>
+
+    @helper.form(action = routes.MemberController.update()){
+        @helper.inputText(memForm("id"))
+        @helper.inputText(memForm("name"))
+        @helper.inputText(memForm("email"))
+        @helper.inputText(memForm("position"))
+
+
+        <input type = "submit" value="Edit member ">
+    }
+}

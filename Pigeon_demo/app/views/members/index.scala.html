@@ -1,0 +1,15 @@
+@(mems : List[Member])
+
+@layout("All Members"){
+    <h1> All Members</h1>
+
+    @for(mem <- mems){
+
+        <a href="@routes.MemberController.show(mem.id)"> @mem.id </a>
+        <p> @mem.name </p>
+
+    }
+
+    <a href="@routes.MemberController.create()"> Create </a>
+}
+
