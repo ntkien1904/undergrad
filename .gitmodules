@@ -1,3 +1,0 @@
-[submodule "test-server"]
-	path = test-server
-	url = https://github.com/ntkien1904/test-server.git
